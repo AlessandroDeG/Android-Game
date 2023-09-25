@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="165dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="SETTINGS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="293dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsText"
+        app:layout_constraintVertical_bias="0.548">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/playerNameText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Player name"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/confermaPlayerNameButton"
+                android:layout_width="109dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="CONFERMA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nShotsText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Max shots N."
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/confermaShotsButton"
+                android:layout_width="108dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="CONFERMA" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/fpsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW FPS" />
+
+        <Switch
+            android:id="@+id/musicSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MUSIC" />
+
+        <Switch
+            android:id="@+id/effectsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOUND EFFECTS" />
+
+        <Switch
+            android:id="@+id/vibrationSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIBRATION" />
+
+        <Switch
+            android:id="@+id/skinSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SKINS" />
+
+        <LinearLayout
+            android:id="@+id/skinsLayout"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/trollCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TROLL" />
+
+            <CheckBox
+                android:id="@+id/spaceCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SPACE" />
+
+            <CheckBox
+                android:id="@+id/biplaneCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BIPLANE" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="295dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MAIN MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

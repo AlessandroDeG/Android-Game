@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.example.game.CustomButton
+                android:id="@+id/saveButton"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="SAVE"
+                android:textSize="14dp" />
+
+            <com.example.game.CustomButton
+                android:id="@+id/mainMenuButton"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="MAIN MENU"
+                android:textSize="14dp" />
+
+            <com.example.game.CustomButton
+                android:id="@+id/pauseButton"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="PAUSE"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <com.example.game.HealthBar
+            android:id="@+id/healthBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:indeterminate="false"
+            android:max="100" />
+    </LinearLayout>
+
+</LinearLayout>
